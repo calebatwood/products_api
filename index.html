@@ -1,0 +1,22 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <title>Project!</title>
+    <script charset="utf-8" type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script charset="utf-8" type="text/javascript" src="bower_components/handlebars/handlebars.js"></script>
+    <script charset="utf-8" type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+    <script id="api-template" type="text/x-handlebars-template">
+      <div class="products">
+        {{#each this}}
+          <p><a href="show.html?id={{id}}">{{name}}</a></p>
+          <p>{{description}}</p>
+          <p>{{price}}</p>
+        {{/each}}
+      </div>
+    </script>
+    <div class="content">
+
+  </body>
+</html>
